@@ -1,12 +1,43 @@
-<section>
-  <div class="example-label">Raised</div>
-  <div class="example-button-row">
-    <button mat-raised-button>Basic</button>
-    <button mat-raised-button color="primary">Primary</button>
-    <button mat-raised-button color="accent">Accent</button>
-    <button mat-raised-button color="warn">Warn</button>
-    <button mat-raised-button disabled>Disabled</button>
-    <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
-  </div>
-</section>
+<!-- navbar -->
+<p>
+  <mat-toolbar style="height: 80px;  position: fixed;top: 0" color="white">
+    <div class="spasi"></div>
+    <span><img style="width: 51px;
+      height: 62px;
+      left: 59px;
+      top: 9px;" src="assets/vuenic-logo.png" alt=""></span>
+
+    <span><img style="width: 96px;
+      height: 37px;
+      left: 119px;
+      top: 22px;margin-left: 9px;" src="assets/vuenic.png" alt=""></span>
+
+    <a class="bacaannav" href="#" style="margin-left: 48px;text-decoration: none;">Tentang Kita</a>
+    <a class="bacaannav" href="#" style="margin-left: 37px;text-decoration: none;">layanan</a>
+    <a class="bacaannav" href="#" style="margin-left: 37px;text-decoration: none;">Blog</a>
+    <a class="bacaannav" href="#" style="margin-left: 37px;text-decoration: none;">Pusat Bantuan</a>
+    <span class="example-spacer"></span>
+    <button mat-stroked-button style="width: 90px;border-radius: 5px;border: 1px solid #46C6CC;
+    box-sizing: border-box;
+    height: 40px;"><span style="color: #46C6CC;">Sign In</span></button>
+    <div class="spasi2"></div>
+  </mat-toolbar>
+</p>
+<!-- akhir navbar -->
+<!-- jumbotron -->
+<div class="jumbotron" style="text-align: center;">
+  <img class="jumbo" style="margin-top: 62px;width: 100%" src="assets/tanah.svg" alt="">
+  <button mat-raised-button style="display: block;text-align: center;margin: auto;margin-top: -70px;background: #46C6CC;
+  box-shadow: 4px 4px 16px rgba(44, 44, 44, 0.5);
+  border-radius: 35px;width: 180px;
+height: 40px;;"><span style="color: white;">Klik Di sini</span></button>
+</div>
+<div class="lingkaran">
+  <img src="assets/lingkaran" alt="">
+  <img src="assets/lingkaran" alt="">
+</div>
+<!-- akhir jumbotron -->
+<!-- Tentang -->
+
+<!-- akhir Tentang -->
 <router-outlet></router-outlet>
