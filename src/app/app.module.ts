@@ -36,7 +36,8 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { AppRoutingModule } from './app-routing.module';
 import { NgImageSliderModule } from 'ng-image-slider';
-import { FlexLayoutModule } from '@angular/flex-layout';
+
+import { LayoutModule } from '@angular/cdk/layout';
 
 
 
@@ -79,12 +80,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
-    FlexLayoutModule,
-    AppRoutingModule,
 
+    AppRoutingModule,
+    LayoutModule,
 
 
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
