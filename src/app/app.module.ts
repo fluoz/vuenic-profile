@@ -40,12 +40,14 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { LayoutModule } from '@angular/cdk/layout';
 import { SidebarModule } from 'ng-sidebar';
 import { HomeComponent } from './pages/home/home.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    NotFoundComponent,
 
   ],
   imports: [
