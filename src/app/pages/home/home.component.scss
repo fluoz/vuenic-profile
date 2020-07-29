@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+body {
+  text-align: center;
+  font-family: 'lato', sans-serif;
+
+
+}
+
+.teuingnaon {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  margin-top: 40px;
+  color: #1E1E1E;
+}
+
+.ieuogeteuing {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  margin-top: 13px;
+
+  color: #4B4646;
+}
+
+
+
+.slideruntukpc {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.tentang {
+
+  margin-top: 124px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.kotaklayanpro {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 26px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.isilayananpc {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-bottom: 107px;
+}
+
+.footermobile {
+  background: linear-gradient(277.64deg, rgba(70, 198, 204, 0.96) -21.79%, rgba(13, 76, 170, 0.96) 114.31%);
+  padding-bottom: 459px;
+}
+
+.footerpc {
+  background: linear-gradient(277.64deg, rgba(70, 198, 204, 0.96) -21.79%, rgba(13, 76, 170, 0.96) 114.31%);
+  padding-bottom: 350px;
+}
+
+.middlemobile {
+  padding-bottom: 79px;
+}
+
+.cardlayan {
+  width: 238px;
+  height: 323px;
+  box-shadow: -6px -6px 16px rgba(255, 255, 255, 0.5), 2px 2px 16px rgba(163, 177, 198, 0.5);
+  background-color: #C4C4C4;
+  border-radius: 15px;
+  margin-left: 40px;
+  margin-top: 68px;
+
+}
+
+.layanpc2 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 24px */
+  margin-top: 13px;
+  margin-left: 55px;
+  color: #4B4646;
+}
+
+.layanankami {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 55px;
+  margin-top: 115px;
+  margin-left: 55px;
+  color: #1E1E1E;
+}
+
+.kotaklayan {
+  background: #C4C4C4;
+  border-radius: 20px;
+  width: 159px;
+  height: 129px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.tentangisi {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+
+  color: #2C2C2C;
+}
+
+.tentangtentangnya a {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 165%;
+  /* identical to box height, or 38px */
+
+  text-decoration: none;
+  color: #46C6CC;
+}
+
+.amettentang {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 165%;
+  /* or 30px */
+
+
+  color: #000000;
+
+}
+
+.pmobile {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+  display: block;
+  margin-top: 17px;
+  color: #000000;
+}
+
+.caritahum {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 165%;
+  /* identical to box height, or 38px */
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  color: #46C6CC;
+}
+
+.tentangm {
+  margin-top: 100px;
+
+}
+
+.resp {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.jumbo {
+  width: 100%
+}
+
+.tentangm p {
+  font-family: 'lato', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 30px;
+
+  color: #2C2C2C;
+}
+
+.bacaannav {
+  font-family: 'lato', sans-serif;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  transition: 0.5s;
+  color: #626262;
+}
+
+.bacaannav:hover {
+  color: #46C6CC;
+}
+
+
+
+.spasi2 {
+  width: 59px;
+  height: 80px;
+  left: 1307px;
+  top: 0px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.lingkaran {
+
+  margin: auto;
+  text-align: center;
+  display: block;
+  margin-top: 66px;
+
+
+}
+
+.spasi {
+  width: 59px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+}
+
+.thumb:hover {
+  cursor: pointer;
+
+}
+
+.thumb {
+  width: 10px;
+  height: 10px;
+}
+
+.thumbm {
+  width: 12px;
+  height: 12px;
+  color: #46C6CC;
+}
+
+.text {
+  float: left;
+
+
+  width: 576px;
+  height: 280px;
+  left: 700px;
+  margin-top: 128px;
+  margin-left: 95px;
+
+
+
+
+}
+
+
+
+.h2 {
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 55px;
+  color: #2c2c2c;
+  width: 576px;
+  height: 117px;
+}
+
+.selen {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 165%;
+  /* identical to box height, or 38px */
+
+  margin-top: 27px;
+  color: #46C6CC;
+}
+
+
+
+.middle {
+
+  max-width: 1366px;
+  margin: 0 auto;
+
+
+}
+
+.selen:hover {
+  cursor: pointer;
+
+}
+
+.layan {
+
+  margin-top: 390px;
+}
+
+.layanan {
+  color: #2c2c2c;
+  font-family: 'lato', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 55px;
+  margin-left: 55px;
+  padding-top: 160px;
+  display: block;
+
+}
+
+.lorem {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: reguler;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  margin-left: 55px;
+  padding-top: -100px;
+  display: block;
+
+  color: #2C2C2C;
+}
+
+.kotak {
+
+  width: 238px;
+  height: 323px;
+  float: left;
+
+  background: #FFFFFF;
+  box-shadow: -6px -6px 16px rgba(255, 255, 255, 0.5), 2px 2px 16px rgba(163, 177, 198, 0.5);
+  border-radius: 20px;
+}
+
+.kotak:hover {
+  box-shadow: -8px -8px 16px rgba(224, 229, 236, 0.5), 6px 6px 16px rgba(163, 177, 198, 0.5);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.lor {
+  display: block;
+  font-family: 'lato', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+  letter-spacing: 0.02em;
+
+  color: #2C2C2C;
+  margin-top: 25px;
+  margin-left: 11px;
+}
+
+.navbartest {
+  box-shadow: 0px 4px 16px rgba(163, 177, 198, 0.5);
+  transition: 1s;
+}
+
+.layananbawah {
+
+  width: 1096px;
+  height: 700px;
+  margin-left: 135px;
+  margin-top: 48px;
+  ;
+
+  line-height: 0;
+}
+
+.kotakke2 {
+  float: left;
+  width: 238px;
+  height: 323px;
+  margin-left: 48px;
+
+
+  background: #FFFFFF;
+  box-shadow: -6px -6px 16px rgba(255, 255, 255, 0.5), 2px 2px 16px rgba(163, 177, 198, 0.5);
+  border-radius: 20px;
+}
+
+.kotakke3 {
+
+  width: 238px;
+  height: 323px;
+  float: left;
+  margin-left: 48px;
+  background: #FFFFFF;
+  box-shadow: -6px -6px 16px rgba(255, 255, 255, 0.5), 2px 2px 16px rgba(163, 177, 198, 0.5);
+  border-radius: 20px;
+}
+
+.kotakke4 {
+
+  width: 238px;
+  height: 323px;
+  float: left;
+  margin-left: 48px;
+  background: #FFFFFF;
+  box-shadow: -6px -6px 16px rgba(255, 255, 255, 0.5), 2px 2px 16px rgba(163, 177, 198, 0.5);
+  border-radius: 20px;
+}
+
+.kotakke2:hover {
+  box-shadow: -8px -8px 16px rgba(224, 229, 236, 0.5), 6px 6px 16px rgba(163, 177, 198, 0.5);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.kotakke3:hover {
+  box-shadow: -8px -8px 16px rgba(224, 229, 236, 0.5), 6px 6px 16px rgba(163, 177, 198, 0.5);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.kotakke4:hover {
+  box-shadow: -8px -8px 16px rgba(224, 229, 236, 0.5), 6px 6px 16px rgba(163, 177, 198, 0.5);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.kotakke5:hover {
+  box-shadow: -8px -8px 16px rgba(224, 229, 236, 0.5), 6px 6px 16px rgba(163, 177, 198, 0.5);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.kotakke5 {
+  float: left;
+  width: 238px;
+  height: 323px;
+  margin-top: 54px;
+
+  background: #FFFFFF;
+  box-shadow: -6px -6px 16px rgba(255, 255, 255, 0.5), 2px 2px 16px rgba(163, 177, 198, 0.5);
+  border-radius: 20px;
+}
+
+.footer {
+  width: 1366px;
+  height: 456px;
+  background: linear-gradient(294.02deg, rgba(70, 198, 204, 0.96) -21.79%, rgba(13, 76, 170, 0.96) 114.31%);
+  margin-top: 122px;
+}
+
+.laya {
+  font-family: 'lato', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+  /* identical to box height, or 36px */
+  text-decoration: none;
+
+  color: #FFFFFF;
+}
+
+.footer ul li {
+  list-style-type: none;
+}

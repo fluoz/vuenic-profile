@@ -36,14 +36,17 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { AppRoutingModule } from './app-routing.module';
 import { NgImageSliderModule } from 'ng-image-slider';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
 import { LayoutModule } from '@angular/cdk/layout';
-
+import { SidebarModule } from 'ng-sidebar';
+import { HomeComponent } from './pages/home/home.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+
   ],
   imports: [
     NgImageSliderModule,
@@ -80,10 +83,10 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
-
+    CarouselModule,
     AppRoutingModule,
     LayoutModule,
-
+    SidebarModule.forRoot(),
 
   ],
 

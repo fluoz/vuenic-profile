@@ -1,0 +1,429 @@
+<!-- navbar -->
+
+<mat-toolbar *ngIf='deviceLg' fxLayoutAlign='space-between' class="navbar"
+  style="height: 80px;  position: fixed;top: 0;background-color: white;">
+  <div class="spasi"></div>
+
+  <span><img style="width: 51px;
+      height: 62px;
+      left: 59px;
+      top: 9px;" src="assets/vuenic-logo.png" alt=""></span>
+
+  <span><img style="width: 96px;
+      height: 37px;
+      left: 119px;
+      top: 22px;margin-left: 9px;" src="assets/vuenic.png" alt=""></span>
+
+
+  <a class="bacaannav" href="#" style="margin-left: 48px;text-decoration: none;">Tentang
+    Kami</a>
+  <a class="bacaannav" href="#" style="margin-left: 37px;text-decoration: none;">layanan</a>
+  <a class="bacaannav" href="#" style="margin-left: 37px;text-decoration: none;">Blog</a>
+  <a class="bacaannav" href="#" style="margin-left: 37px;text-decoration: none;">Pusat Bantuan</a>
+
+
+  <span class="example-spacer"></span>
+  <button mat-flat-button style="width: 120px;border-radius: 5px;background-color: #46C6CC;
+   
+    height: 40px;"><span style="color: #ffffff;">Daftar/Masuk</span></button>
+  <div class="spasi2"></div>
+</mat-toolbar>
+<mat-toolbar *ngIf='deviceMd' fxLayoutAlign='space-between' class="navbar"
+  style="height: 80px;  position: fixed;top: 0;background-color: white;">
+  <div class="spasi"></div>
+
+  <span><img style="width: 51px;
+      height: 62px;
+      left: 59px;
+      top: 9px;" src="assets/vuenic-logo.png" alt=""></span>
+
+  <span><img style="width: 96px;
+      height: 37px;
+      left: 119px;
+      top: 22px;margin-left: 9px;" src="assets/vuenic.png" alt=""></span>
+
+
+  <a class="bacaannav" href="#" style="margin-left: 48px;text-decoration: none;">Tentang
+    Kami</a>
+  <a class="bacaannav" href="#" style="margin-left: 37px;text-decoration: none;">layanan</a>
+  <a class="bacaannav" href="#" style="margin-left: 37px;text-decoration: none;">Blog</a>
+  <a class="bacaannav" href="#" style="margin-left: 37px;text-decoration: none;">Pusat Bantuan</a>
+
+
+  <span class="example-spacer"></span>
+  <button mat-flat-button style="width: 120px;border-radius: 5px;background-color: #46C6CC;
+   
+    height: 40px;"><span style="color: #ffffff;">Daftar/Masuk</span></button>
+  <div class="spasi2"></div>
+</mat-toolbar>
+
+<!-- mobile navbar -->
+<mat-toolbar *ngIf='deviceSm' fxLayoutAlign="space-around center" style="background-color: white;">
+  <mat-toolbar-row>
+    <span><img style="width: 35px;
+      height: 41px;" src="assets/vuenic-logo.png" alt=""></span>
+    <span><img style="width: 81px;
+      height: 30px;;margin-left: 9px;" src="assets/vuenic.png" alt=""></span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <img src="assets/tombolmenu.svg" alt="">
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-toolbar *ngIf='deviceXs' fxLayoutAlign="space-around center" style="background-color: white;">
+  <mat-toolbar-row>
+    <span><img style="width: 35px;
+      height: 41px;" src="assets/vuenic-logo.png" alt=""></span>
+    <span><img style="width: 81px;
+      height: 30px;;margin-left: 9px;" src="assets/vuenic.png" alt=""></span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <img src="assets/tombolmenu.svg" alt="">
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<!-- akhir navbar -->
+<!-- jumbotron -->
+
+<div class="jumbotronpc" *ngIf='!deviceXs !deviceMd !deviceSm'>
+  <img class="jumbo" style="margin-top: 80px;" src="assets/tanah.svg" alt="">
+  <button mat-flat-button style="display: block;text-align: center;margin: auto;margin-top: -70px;background: #46C6CC;
+  box-shadow: 4px 4px 16px rgba(44, 44, 44, 0.5);
+  border-radius: 35px;width: 180px;
+height: 40px;;"><span style="color: white;">Klik Di sini</span></button>
+
+
+</div>
+
+<!-- mobile jumbotron -->
+<div class="jumbotronmobile" *ngIf='deviceXs'>
+  <owl-carousel-o [options]="customOptions" style="position: relative;">
+    <ng-template carouselItem>
+      <div class="carousel-item">
+        <button mat-raised-button>Basic</button>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="slide">
+        <img src="assets/padi.svg">
+
+      </div>
+
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="slide">
+        <img src="assets/padi.svg">
+      </div>
+    </ng-template>
+
+    <div class="owl-dots">
+      <div class="owl-dot active"><span></span></div>
+      <div class="owl-dot"><span></span></div>
+    </div>
+
+  </owl-carousel-o>
+</div>
+<div class="middle" *ngIf='!deviceXs'>
+  <!-- akhir jumbotron -->
+  <!-- middle -->
+  <!-- <div class="middle" *ngIf='!deviceXs'> -->
+  <!-- Tentang -->
+  <!-- <div *ngIf="!deviceXs" class="tentang" fxLayoutAlign="space-around center">
+    <div class="gambartentang">
+      <img src="assets/gamabrt2.svg" alt="">
+    </div>
+    <div class="tentangtentangnya">
+      <p class="tentangisi">Tentang Yayasan Bangsa Bisa <br> Indonesia</p>
+      <p class="amettentang">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet <br>
+        sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+        consequat <br> sunt nostrud amet. </p>
+      <a href="#">Cari Tahu Disini <img style="margin-left:4px ;" src="assets/panah.svg" alt=""></a>
+    </div>
+  </div>
+</div> -->
+
+  <div class="tentang" *ngIf='!deviceXs'>
+    <div class="gambartentang">
+      <img src="assets/gamabrt2.svg" alt="">
+    </div>
+    <div class="tentangtentangnya">
+      <p class="tentangisi">Tentang Yayasan Bangsa Bisa <br> Indonesia</p>
+      <p class="amettentang">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet <br>
+        sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+        consequat <br> sunt nostrud amet. </p>
+      <a href="#">Cari Tahu Disini <img style="margin-left:4px ;" src="assets/panah.svg" alt=""></a>
+    </div>
+  </div>
+  <div *ngIf='!deviceXs' class="slideruntukpc" style="margin-top: 161px;">
+
+    <owl-carousel-o [options]="custom3">
+      <ng-template carouselItem>
+
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="slide">
+          <img src="assets/sliderpc.svg">
+
+        </div>
+
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="slide">
+          <img src="assets/sliderpc.svg">
+        </div>
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="slide">
+          <img src="assets/sliderpc.svg">
+        </div>
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="slide">
+          <img src="assets/sliderpc.svg">
+        </div>
+      </ng-template>
+
+    </owl-carousel-o>
+  </div>
+  <!-- layanan pc -->
+  <p class="layanankami">layanan kami</p>
+  <p class="layanpc2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+  <div class="isilayananpc">
+    <div class="cardlayan"><span>1</span></div>
+    <div class="cardlayan"><span>1</span></div>
+    <div class="cardlayan"><span>1</span></div>
+    <div class="cardlayan"><span>1</span></div>
+    <div class="cardlayan"><span>1</span></div>
+  </div>
+  <!-- akhir middle -->
+</div>
+<!-- middle mobile -->
+<mat-card class="middlemobile" *ngIf="deviceXs">
+  <!-- tentang mobile -->
+  <div *ngIf='deviceXs' class="tentangm">
+    <p>Tentang Yayasan Bangsa Bisa Indonesia</p>
+    <img class="resp" src="assets/gambart.svg" alt="">
+    <span class="pmobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat.</span>
+    <a class="caritahum" href="#">Cari Tahu Disini <img src="assets/panah.svg" alt=""></a>
+  </div>
+
+
+
+  <!-- akhir Tentang -->
+  <!-- slider -->
+  <div style="position: relative;margin-top: 50px;" class="sliderke2">
+    <owl-carousel-o [options]="custom2">
+      <ng-template carouselItem>
+
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="slide">
+          <img src="assets/slider1.svg">
+
+        </div>
+
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="slide">
+          <img src="assets/slider1.svg">
+        </div>
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="slide">
+          <img src="assets/slider1.svg">
+        </div>
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="slide">
+          <img src="assets/slider1.svg">
+        </div>
+      </ng-template>
+
+    </owl-carousel-o>
+  </div>
+  <p class="teuingnaon">Layanan Kami</p>
+  <p class="ieuogeteuing">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+  <!-- akhir silder -->
+  <!-- layanan -->
+  <div class="kotaklayanpro">
+    <div class="kotaklayan">
+      <p>1</p>
+    </div>
+    <div class="kotaklayan">
+      <p>1</p>
+    </div>
+    <div class="kotaklayan">
+      <p>1</p>
+    </div>
+    <div class="kotaklayan">
+      <p>1</p>
+    </div>
+    <div class="kotaklayan">
+      <p>1</p>
+    </div>
+  </div>
+
+
+  <!-- <br>
+  <div class="layan"><span class="layanan">Layanan Kami</span></div> <br>
+  <div class="loremp"><span class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor.
+    </span></div>
+  <div class="layananbawah">
+    <div class="kotak">
+      <img src="assets/selada.svg" alt="">
+      <span style="font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  /* identical to box height */
+  margin-top: -48px;
+  margin-left: 11px;
+  display: block;
+  
+  color: #FFFFFF">Lorem</span>
+      <p class="lor">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+        labore
+        et
+        dolore
+        magna aliqua.</p>
+    </div>
+    <div class="kotakke2">
+      <img src="assets/selada.svg" alt="">
+      <span style="font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  /* identical to box height */
+  margin-top: -48px;
+  margin-left: 11px;
+  display: block;
+  
+  color: #FFFFFF">Lorem</span>
+      <p class="lor">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+        labore
+        et
+        dolore
+        magna aliqua.</p>
+    </div>
+    <div class="kotakke3">
+      <img src="assets/selada.svg" alt="">
+      <span style="font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  /* identical to box height */
+  margin-top: -48px;
+  margin-left: 11px;
+  display: block;
+  
+  color: #FFFFFF">Lorem</span>
+      <p class="lor">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+        labore
+        et
+        dolore
+        magna aliqua.</p>
+    </div>
+    <div class="kotakke4">
+      <img src="assets/selada.svg" alt="">
+      <span style="font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  /* identical to box height */
+  margin-top: -48px;
+  margin-left: 11px;
+  display: block;
+  
+  color: #FFFFFF">Lorem</span>
+      <p class="lor">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+        labore
+        et
+        dolore
+        magna aliqua.</p>
+
+    </div>
+    <div class="kotakke5">
+      <img src="assets/selada.svg" alt="">
+      <span style="font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  /* identical to box height */
+  margin-top: -48px;
+  margin-left: 11px;
+  display: block;
+  
+  color: #FFFFFF">Lorem</span>
+      <p class="lor">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+        labore
+        et
+        dolore
+        magna aliqua.</p>
+
+    </div>
+  </div> -->
+
+
+
+  <!-- akhir layanan -->
+  <!-- footer -->
+  <!-- <div class="footer">
+    <img src="assets/vtext.png" style="margin-left: 76px;margin-top: 58px;float: left;" alt="">
+
+    <ul style="margin-left: 146px;float: left;font-display: block;">
+      <li style="margin-top: 82px;"><a class="laya" href="#">Tentang Kami</a></li>
+      <li style="margin-top: 23px;"><a class="laya" href="#">Layanan</a></li>
+      <li style="margin-top: 23px;"><a class="laya" href="#">Blog</a></li>
+      <li style="margin-top: 23px;"><a class="laya" href="#">Pusat Bantuan</a></li>
+      <li style="margin-top: 23px;"><a class="laya" href="#">Pusat Bantuan</a></li>
+    </ul>
+    <ul style="margin-left: 122px;float: left;font-display: block;">
+      <li style="margin-top: 82px;"><a class="laya" href="#">Tentang Kami</a></li>
+      <li style="margin-top: 23px;"><a class="laya" href="#">Layanan</a></li>
+      <li style="margin-top: 23px;"><a class="laya" href="#">Blog</a></li>
+      <li style="margin-top: 23px;"><a class="laya" href="#">Pusat Bantuan</a></li>
+      <li style="margin-top: 23px;"><a class="laya" href="#">Pusat Bantuan</a></li>
+    </ul>
+    <span style="font-family: 'lato',sans-serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 30px;
+   line-height: 180%;
+   /* identical to box height, or 54px */
+   margin-top: 69px;
+   display: inline-block;
+   margin-left: 146px;
+   
+   color: #FFFFFF;">Unduh</span>
+  </div>
+  <div class="border" style="border: 0.5px solid #FFFFFF;margin-top: -100px;width: 1248px;height: 0px;">
+
+  </div> -->
+
+
+  <!-- akhir footer -->
+
+  <!-- akhir middle -->
+
+  <!-- akhir middle mobile -->
+</mat-card>
+<div class="footermobile" *ngIf='deviceXs'>
+  <img style="margin-left: 13px;margin-top: 25px;" src="assets/vtext.png" alt="">
+</div>
+<div class="footerpc" *ngIf='!deviceXs'>
+  <img style="margin-left: 59px;margin-top: 50px;" src="assets/vtext.png" alt="">
+</div>
