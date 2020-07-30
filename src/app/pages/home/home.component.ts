@@ -132,9 +132,13 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.mediaSub.unsubscribe();
   }
 
+
+  bebas() {
+    document.querySelector('.tside').classList.toggle('slide')
+  }
+
+
 }
 
-const menunya = document.querySelector('#input');
-const sidebar = document.querySelector('.tside');
 
 
