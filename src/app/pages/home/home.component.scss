@@ -7,7 +7,7 @@
 body {
   text-align: center;
   font-family: 'lato', sans-serif;
-
+  overflow-x: hidden;
 
 }
 
@@ -198,8 +198,119 @@ body {
   margin-top: 10px;
 }
 
+
+
+.jumbotronpc {
+  z-index: -1;
+}
+
 .jumbo {
   width: 100%
+}
+
+.testb {
+  position: relative;
+
+}
+
+#input {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  opacity: 0;
+  z-index: 4;
+
+}
+
+.imgbutton2 {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  transition: all 0.8s;
+  opacity: 0;
+  z-index: 3;
+}
+
+.imgbutton {
+  transition: all 0.8s;
+  z-index: 3;
+}
+
+.tside {
+  background-color: white;
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+
+.tside.slide {
+  transform: translateX(0);
+}
+
+.tside span {
+  border: 2px solid #46C6CC;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 55px;
+}
+
+.daftarbut {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  width: 180px;
+  height: 50px;
+  color: #46C6CC;
+
+  background: #FFFFFF;
+  border: 1px solid #46C6CC;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.isia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+  align-items: flex-start;
+  height: 287px;
+  margin-top: 39px;
+}
+
+.tside .isia a {
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #000000;
+  display: inline-block;
+  text-decoration: none;
+
+}
+
+
+#input:checked~.imgbutton2 {
+  transform: rotateY(180deg);
+  opacity: 1;
+
+}
+
+#input:checked~.imgbutton {
+  transform: rotateY(180deg);
+  opacity: 0;
+
 }
 
 .tentangm p {

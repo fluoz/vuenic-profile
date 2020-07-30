@@ -1,7 +1,7 @@
 <!-- navbar -->
 
 <mat-toolbar *ngIf='deviceLg' fxLayoutAlign='space-between' class="navbar"
-  style="height: 80px;  position: fixed;top: 0;background-color: white;">
+  style="height: 80px;  position: fixed;top: 0;background-color: white;z-index: 2;">
   <div class="spasi"></div>
 
   <span><img style="width: 51px;
@@ -29,7 +29,7 @@
   <div class="spasi2"></div>
 </mat-toolbar>
 <mat-toolbar *ngIf='deviceMd' fxLayoutAlign='space-between' class="navbar"
-  style="height: 80px;  position: fixed;top: 0;background-color: white;">
+  style="height: 80px;  position: fixed;top: 0;background-color: white;z-index: 2;">
   <div class="spasi"></div>
 
   <span><img style="width: 51px;
@@ -65,8 +65,10 @@
     <span><img style="width: 81px;
       height: 30px;;margin-left: 9px;" src="assets/vuenic.png" alt=""></span>
     <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <img src="assets/tombolmenu.svg" alt="">
+    <button class="testb" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <input type="checkbox" name="" id="input">
+      <img class="imgbutton" src="assets/tombolmenu.svg" alt="">
+      <img class="imgbutton2" src="assets/silang.svg" alt="">
     </button>
   </mat-toolbar-row>
 </mat-toolbar>
@@ -78,11 +80,24 @@
     <span><img style="width: 81px;
       height: 30px;;margin-left: 9px;" src="assets/vuenic.png" alt=""></span>
     <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <img src="assets/tombolmenu.svg" alt="">
+    <button class="testb" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <input type="checkbox" name="" id="input">
+      <img class="imgbutton" src="assets/tombolmenu.svg" alt="">
+      <img class="imgbutton2" src="assets/silang.svg" alt="">
     </button>
+
   </mat-toolbar-row>
+  <div class="tside">
+    <span></span>
+    <div class="isia"><a href="#">Tentang Kami</a>
+      <a href="#">layanan</a>
+      <a href="#">Blog</a>
+      <a href="#">Pusat Bantuan</a>
+      <button class="daftarbut" mat-stroked-button>Daftar/Masuk</button>
+    </div>
+  </div>
 </mat-toolbar>
+
 
 <!-- akhir navbar -->
 <!-- jumbotron -->

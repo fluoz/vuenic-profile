@@ -3,6 +3,7 @@ import { TranslationWidth } from '@angular/common';
 import { MediaObserver, MediaChange } from '@angular/flex-layout';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Subscription } from 'rxjs';
+import { __classPrivateFieldSet } from 'tslib';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,8 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit, OnDestroy {
+
+
   private _opened: boolean = false;
 
   private _toggleSidebar() {
@@ -131,14 +134,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
 }
 
-
-
-const jumbotron = document.querySelector('.jumbotron');
-const jumbo = document.querySelector('.jumbo');
-const thumb = document.querySelector('.thumb');
-const thumb2 = document.querySelector('.thumb2');
-const navbar = document.querySelector('.navbar');
-const body = document.getElementById('body')
-
+const menunya = document.querySelector('#input');
+const sidebar = document.querySelector('.tside');
 
 
