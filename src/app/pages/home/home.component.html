@@ -73,7 +73,7 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
-<mat-toolbar *ngIf='deviceXs' fxLayoutAlign="space-around center" style="background-color: white;">
+<mat-toolbar class="txs" *ngIf='deviceXs' fxLayoutAlign="space-around center" style="background-color: white;">
   <mat-toolbar-row>
     <span><img style="width: 35px;
       height: 41px;" src="assets/vuenic-logo.png" alt=""></span>
@@ -113,7 +113,7 @@ height: 40px;;"><span style="color: white;">Klik Di sini</span></button>
 </div>
 
 <!-- mobile jumbotron -->
-<div class="jumbotronmobile" *ngIf='deviceXs'>
+<div class="jumbotronmobile" *ngIf='deviceXs' style="z-index: -1;">
   <owl-carousel-o [options]="customOptions" style="position: relative;">
     <ng-template carouselItem>
       <div class="carousel-item">

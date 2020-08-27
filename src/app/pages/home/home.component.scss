@@ -231,6 +231,11 @@ body {
   z-index: 3;
 }
 
+mat-toolbar {
+  position: fixed;
+  z-index: 99999;
+}
+
 .imgbutton {
   transition: all 0.8s;
   z-index: 3;
@@ -247,6 +252,7 @@ body {
   flex-direction: column;
   transform: translateX(-100%);
   transition: all 0.5s;
+  position: fixed;
 }
 
 .tside.slide {
