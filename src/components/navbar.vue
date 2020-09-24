@@ -47,15 +47,15 @@
           </li>
 
           <md-button
-            style="text-decoration:none;"
+            style="text-decoration: none"
             href="https://apps.vuenic.com/signup"
-            class="md-primary bg-white daft"
+            class="md-primary bg-white daft daftar"
           >
             <span :style="span">Daftar</span>
           </md-button>
           <span class="line"></span>
           <md-button
-            style="text-decoration:none;"
+            style="text-decoration: none"
             href="https://apps.vuenic.com/signin"
             class="md-primary but"
           >
@@ -71,11 +71,16 @@
           <div class="heading">
             <h2>
               Selamat Datang di
-              <span class="blue">Vuenic</span> (IoT
-              Platform)
+              <span class="blue">Vuenic</span> (IoT Platform)
             </h2>
             <br />
-            <p>Vuenic merupakan IoT (Internet of Things) Platform yang kami kembangkan untuk optimalisasi sistem dalam mencapai pengelolaan data secara menyeluruh, pengawasan secara penuh, fungsi remote control jarak jauh dan juga memberikan informasi berdasarkan data historis, sehingga dapat meningkatkan efisiensi dan efektivitas</p>
+            <p>
+              Vuenic merupakan IoT (Internet of Things) Platform yang kami
+              kembangkan untuk optimalisasi sistem dalam mencapai pengelolaan
+              data secara menyeluruh, pengawasan secara penuh, fungsi remote
+              control jarak jauh dan juga memberikan informasi berdasarkan data
+              historis, sehingga dapat meningkatkan efisiensi dan efektivitas
+            </p>
             <br />
 
             <div class="button">
@@ -388,7 +393,7 @@ li {
     margin-bottom: -100px;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1190px) {
   .gambarbesar {
     display: none;
   }
@@ -424,12 +429,10 @@ li {
     justify-content: center;
     align-items: center;
   }
-  .nav-mobile {
-    display: flex;
-    top: 0;
-    z-index: 1;
+  .navbar-mobile {
+    display: none;
   }
-  .navbar {
+  .daftar {
     display: none;
   }
 }
