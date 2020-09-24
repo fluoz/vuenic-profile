@@ -49,7 +49,7 @@
           <md-button
             style="text-decoration: none"
             href="https://apps.vuenic.com/signup"
-            class="md-primary bg-white daft daftar"
+            class="md-primary bg-white daft"
           >
             <span :style="span">Daftar</span>
           </md-button>
@@ -190,6 +190,7 @@ export default {
   background-color: white;
   position: fixed;
   box-shadow: 0px 8px 16px rgba(247, 247, 247, 0.25);
+  transition: 0.5s;
 }
 p {
   font-size: 16px;
@@ -265,7 +266,7 @@ li {
   display: flex;
   justify-content: space-around;
   transform: translate3d(0, 0, 0);
-  transition: 0.1s all ease-in-out;
+  transition: 0.5s;
   width: 100%;
   z-index: 1;
 
